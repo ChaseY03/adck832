@@ -1,4 +1,4 @@
 # adck832
-Mouse clicker game created in Java Processing
+Portfolio of projects made while at City, University of London
 
 - Chase Yang
