@@ -3,6 +3,9 @@
 <html>
 
 <head>
+ <meta charset="UTF-8">
+ <title>Chase Yang</title>
+ 
  <style type="text/css">
    body{
       background-color:rgb(50,50,50);
@@ -37,15 +40,47 @@
    footer{
     text-align: right;
    }
+   .skills-list{
+    color: rgb(200, 51, 34);
+    margin: 25px 0px 10px;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    list-style: none;
+    text-align: center;
+    font-family: 'Lucida Console';
+    font-weight: bold;
+    justify-content: center;
+
+   }
+   .skills-list li{
+    margin: 0px 25px 5px 0px;
+    display: inline-block;
+
+   }
  </style>
 </head>
 
 <body style="background-color:rgb(50,50,50); color:white">
 
     <div class="content">
+      <!-- Info  -->
       <h1 class="center">Chase Yang</h1>
-      <p class="center"> First time coding anything major in Java. I went to The Studio Liverpool; I spent my ALevels doing a Scripting & Programming Diploma and Maths. I went high school from year 9 and was taught C# till sixth form. I've made applications for clients, software, mobile apps, and websites. My interests are photography/film-making, and gaming.</p> 
+      <p class="center"> First time coding anything major in Java. I went to The Studio Liverpool; I spent my ALevels doing a Scripting & Programming Diploma and Maths. I went to a tech high school from year 9 and was taught C# till sixth form. I've made applications for clients, software, mobile apps, and websites. My interests are photography/film-making, and gaming.</p> 
      <img class="round" src="Images/profile.jpg" width=200px></img>
+     <div class="content center">
+     <ul class="skills-list">
+       <li>C#</li>
+       <li>HTML</li>
+       <li>CSS</li>
+       <li>JavaScript</li>
+       <li>Bootstrap</li>
+       <li>Java</li>
+       <li>SQL</li>
+       <li>Xamarin</li>
+     </ul>
+     </div>
     </div>
   <!-- CPS game  -->
     <div class="content">
@@ -60,7 +95,6 @@
 
   <center>
     <video width="430" height="200" controls>
-     <!--<source src="https://web.microsoftstream.com/video/6311b6d7-84b4-4e5b-993f-102379c4acce"> -->
       <source src="Videos/CPS_game_showcase.mp4" type="video/mp4">
     </video>
   </div>
