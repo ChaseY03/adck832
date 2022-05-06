@@ -15,6 +15,13 @@ public class ControlPanel {
     private final GameView view;
     private final GameLevel level;
 
+    /**
+     * This is the GUI menu that pops up when the player presses the escape key. In this menu it features the settings button,
+     * restart level button, save current data button, and quit game button.
+     * @param game This is the variable of the current game.
+     * @param view This is the variable for the current game window.
+     * @param level This is the variable of the current level the game is on.
+     */
     public ControlPanel(Game game, GameView view, GameLevel level){
         this.game = game;
         this.view = view;

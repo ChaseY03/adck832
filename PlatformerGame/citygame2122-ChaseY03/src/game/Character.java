@@ -3,6 +3,11 @@ package game;
 import city.cs.engine.*;
 import org.jbox2d.common.Vec2;
 
+/**
+ * This class is where all the character's graphics are stored.
+ * The class loads all the images of the directions the character can face and the hitbox shape which is the PolgonShape.
+ * The startWalking method is what decides which directional image it should use.
+ */
 public class Character extends Walker {
 
     private final GameLevel world;

@@ -3,6 +3,11 @@ package game;
 import city.cs.engine.*;
 import org.jbox2d.common.Vec2;
 
+/**
+ * Acts as the lift platform in Level 3.
+ * Implements the step listener which is the feature that makes the platform move.
+ * MovingPlatform method declares the height limit it can go to and the speed in which it moves up and down.
+ */
 public class MovingPlatform extends StaticBody implements StepListener {
     private static final Shape liftShape = new BoxShape(2,0.5f);
     private final Vec2 startPos;

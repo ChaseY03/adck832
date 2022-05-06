@@ -8,6 +8,13 @@ import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.UnsupportedAudioFileException;
 import java.io.IOException;
 
+/**
+ * PortalInteract class is triggered whenever the player touches the portal that is in the game world.
+ * It uses collision listeners to check if there is anything touching its hitbox.
+ * The class loads the sound effect that will play when it is triggered.
+ * The collide method is what actions happen when the event interaction is triggered, in this case it plays the sound
+ * and removes the portal as well as start the next game level as this is the completion point checker.
+ */
 public class PortalInteract implements CollisionListener  {
     GameLevel currentLevel;
     Game game;
@@ -27,10 +34,6 @@ public class PortalInteract implements CollisionListener  {
         currentLevel = lv;
         this.game = game;
     }
-    /*
-    public PortalInteract (Character c){
-        this.character = c;
-    }*/
 
     @Override
     public void collide(CollisionEvent e) {

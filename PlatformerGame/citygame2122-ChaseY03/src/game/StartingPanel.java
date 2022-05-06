@@ -16,6 +16,11 @@ public class StartingPanel {
     private JLabel bgImage;
     private final ImageIcon startingBG;
 
+    /**
+     * This is the start screen the player sees when they run this game, it includes the start game, keybind help,
+     * and quit game key
+     * @param g this is what the game variable is named, this helps the GUI load onto the right window.
+     */
     public StartingPanel(Game g){
         super();
         this.game = g;

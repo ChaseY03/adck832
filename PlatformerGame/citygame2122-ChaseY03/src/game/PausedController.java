@@ -3,6 +3,13 @@ package game;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
+/**
+ * This class is dedicated to listening for the key event that will pause the game for the player.
+ * It will check if the escape key has been pressed and if it has been pressed it will pause the game and load the paused
+ * menu GUI, if that menu has already been loaded and the game state is set to paused it will reset and start the game.
+ */
+
+
 public class PausedController implements KeyListener {
     private Character character;
     private final GameView gameview;

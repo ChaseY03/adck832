@@ -8,6 +8,10 @@ import javax.swing.*;
 import java.awt.*;
 import java.io.IOException;
 
+/**
+ * @author Chase Yang
+ * @version 1
+ */
 public class Game {
 
     public SoundClip bgMusic;
@@ -34,7 +38,11 @@ public class Game {
     public final int finishState = 4;
     public int soundMuted = 1; //1 is no, 2 is yes
 
-    /** Initialise a new Game. */
+    /** Initialise a new Game.
+     * Sets the starting level to Level 1 and adds into the view the player's character at a size window of 500 x 500
+     * It adds all the event listeners such as for movement, shooting and pausing the game.
+     * It also loads all the GUI menus in case they are ever called.
+     * */
     public Game() {
         level = new Level1(this);
         view = new GameView(level,this, level.getCharacter(), 500,500);
@@ -65,6 +73,12 @@ public class Game {
         frame.setVisible(true);
 
     }
+
+    /** Runs when the player selects start on the start screen menu.
+     * This removes the start screen menu, replaces it with the game and starts them at Level 1.
+     * It sets the game state as playing so that the pause gui will not show.
+     * It also loads the music track for Level 1 on a loop.
+     * */
     public void gameStart(){
         frame.remove(GUIstart.getMainPanel());
         frame.add(view);
@@ -196,6 +210,10 @@ public class Game {
         credits++;
     }
 
+    /**
+     * Method that finds the credits variable and returns that value
+     * @return credits is the part that the system will send back. (example: credits = 2)
+     */
     public int getCreds() {
         return credits;
     }
